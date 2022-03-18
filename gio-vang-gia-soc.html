@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>GIỜ VÀNG GIÁ SỐC</title>
+    <meta http-equiv="refresh" content="1000" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="sales, nguyencongpc, khuyến mại, mua máy tính giảm giá sốc, khuyến mại buildpc , ncpc, máy tính workstation, build pc">
+    <meta name="description" content="Mua máy tính đồ họa, laptop gaming, PC workstation, linh kiện máy tính, card đồ họa cấu hình cao tại Nguyễn Công với hàng ngàn sản phẩm, giá rẻ và siêu khuyến mãi..." />
+    <link rel="canonical" href="https://nguyencongpc.vn" />
+    <meta content="DOCUMENT" name="RESOURCE-TYPE" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <link rel="shortcut icon" href="https://nguyencongpc.vn/static/assets/default/images/favion_NC.png?v=1.2" type="image/x-icon" />
+    <meta property="og:title" content="GIỜ VÀNG GIÁ SỐC" />
+    <meta property="og:description" content="Mua máy tính đồ họa, laptop gaming, PC workstation, linh kiện máy tính, card đồ họa cấu hình cao tại Nguyễn Công với hàng ngàn sản phẩm, giá rẻ và siêu khuyến mãi..." />
+    <meta property="og:image" content="https://nguyencongpc.vn/media/lib/24-02-2022/banner.jpg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://nguyencongpc.vn/static/assets/default/script/style.css?5.5" type="text/css" />
+    <style type="text/css" media="screen">
+        body {
+            background-image: linear-gradient( #000033, #0e5a99);
+            background-size: 100% 100%;
+            min-width: unset;
+        }
+        img {
+            width:  100%;
+        }
+
+        .c-banner {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+        .c-banner a {
+            max-width: 1920px;
+            display: block;
+            margin: auto;
+        }
+
+        .c-content {
+            max-width: 1400px;
+            background-image: url(https://nguyencongpc.vn/media/lib/18-03-2022/bg.jpg);
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-size: cover;
+            margin: auto;
+            padding: 0 40px 40px;
+            overflow: hidden;
+        }
+
+        .c-content a {
+            width: 49%;
+            float: left;
+            margin-right: 2%;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .c-content .col3 a{
+            width: 32%;
+            float: left;
+            margin-right: 2%;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .c-content a:nth-child(2n) {
+            margin: 0 !important;
+        }
+
+        .c-content a img {
+            transform-origin: 50% 65%;
+            transition: transform 3s, filter 2s ease-in-out;
+            filter: brightness(110%);
+        }
+
+        .c-content a:hover img {
+            filter: brightness(100%);
+            transform: scale(3);
+            transform: scale(1.1);
+        }
+
+        .menu-cat {
+            top: 15px;
+        }
+
+        .menu-cat .box-menu-home {
+            top: 55px;
+        }
+
+        .header-mid.header-fixed .menu-cat {
+            top: 0px;
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": {{ page.product_info.extend.review_score }},
+            "bestRating": 10,
+            "worstRating": 0,
+            "reviewCount": {{ page.product_info.extend.review_count }}
+        },
+        "mpn": "1830",
+        "description": "{{ page.description | replace: '"', "''" }}",
+        "name": "{{ page.product_info.productName | replace: '"', "''" }}",
+        "image": "{{ page.product_info.productImage.large }}",
+        "url": "{{ page.product_info.productUrl }}",
+        "sku": "{{ page.product_info.productSKU }}",
+        "brand": {
+            "@type": "Brand",
+            "description": "Đang cập nhật...",
+            "name": "{{ page.product_info.brand.name }}"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "{{ page.product_info.price }}",
+            {% if page.product_info.marketPrice > 0 %}
+            "highPrice": "{{ page.product_info.marketPrice }}",
+            {% endif %}
+            "offerCount": "1",
+            "priceCurrency": "VND",
+            "offers": [{
+                    "@type": "Offer",
+                    "url": "{{ page.product_info.productUrl }}"
+                },
+                {
+                    "@type": "Offer",
+                    "url": "{{ page.product_info.productUrl }}"
+                }
+            ]
+        },
+        "review": [{
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Nguyễn Minh Tiến"
+            },
+            "datePublished": "21-11-2020, 2:00 pm",
+            "description": "",
+            "name": "Đánh giá sản phẩm",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 10,
+                "ratingValue": 7,
+                "worstRating": 1
+            }
+        }, {
+            "@type": "Review",
+            "author": {
+                "@type": "Person",
+                "name": "Nguyễn Tuấn Anh "
+            },
+            "datePublished": "21-11-2020, 1:59 pm",
+            "description": "",
+            "name": "Đánh giá sản phẩm",
+            "reviewRating": {
+                "@type": "Rating",
+                "bestRating": 10,
+                "ratingValue": 7,
+                "worstRating": 1
+            }
+        }]
+    }
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115615186-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115615186-1');
+    </script>
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1087712025416221');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1087712025416221&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body >
+    </section class="main">
+    <h1 style="display:none;">giá sốc</h1>
+    <div class="c-banner">
+        <a href="#" title="Máy Tính Nguyễn Công"><img  src="https://nguyencongpc.vn/media/lib/18-03-2022/banner.jpg"></a>
+    </div>
+    <div class="c-content">
+        <div class="col3">
+            <a href="https://nguyencongpc.vn/oc-vit-jonsbo-lotr">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/oc-vit-jonsbo-lotr.png">
+            </a>
+            <a href="https://nguyencongpc.vn/ban-di-chuot-game-battlegrounds-300x800-mm">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/ban-di-chuot-game-battlegrounds.png">
+            </a>
+            <a href="#">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/ao-asus-ct2003-rog-triangle.png">
+            </a>
+            <a href="https://nguyencongpc.vn/cpu-amd-ryzen-5-5600g-6-nhan-12-luong">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/cpu-amd-ryzen-5-5600g.png">
+            </a>
+            <a href="https://nguyencongpc.vn/cpu-intel-core-i3-12100f-33ghz-turbo-up-to-43ghz-4-nhan-8-luong-12mb-cache">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/cpu-intel-corei3-12100f.png">
+            </a>
+            <a href="https://nguyencongpc.vn/cpu-intel-core-i5-12400f-upto-44ghz-6-nhan-12-luong-18mb-cache-65w-socket-intel-lga-1700">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/cpu-intel-corei5-12400f.png">
+            </a>
+            <a href="https://nguyencongpc.vn/card-man-hinh-asus-dual-rtx-2060-oc-12g-evo">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/vga-asus-dual-geforce-rtx-2060-oc-evo.png">
+            </a>
+            <a href="https://nguyencongpc.vn/vga-galax-geforce-gtx-1660-1-click-oc-6gb-gddr5">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/vga-galax-geforce-gtx-1660.png">
+            </a>
+            <a href="https://nguyencongpc.vn/man-hinh-asus-va24dqlb-238-inch-fhd-ips-75hz">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/man-hinh-asus-va24dqlb.png">
+            </a>
+            <a href="https://nguyencongpc.vn/o-cung-ssd-pny-cs900-120gb-sata3">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/ssd-pny-cs900-sata-iii-120gb.png">
+            </a>
+            <a href="https://nguyencongpc.vn/mainboard-msi-mag-b660m-mortar-ddr4">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/msi-mag-b660m-mortar-ddr4.png">
+            </a>
+            <a href="https://nguyencongpc.vn/mainboard-msi-pro-h610m-b-ddr4">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/main-msi-pro-h610m-b-ddr4.png">
+            </a>
+            <a href="https://nguyencongpc.vn/nguon-xigmatek-minotaur-mt550-80-plus-gold">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/nguon-xigmatek-minotaur-mt550-80-plus-gold.png">
+            </a>
+            <a href="https://nguyencongpc.vn/tan-nhiet-nuoc-aio-asus-tuf-gaming-lc-240-argb">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/tan-nhiet-asus-tuf-gaming-lc-240-argb.png">
+            </a>
+            <a href="https://nguyencongpc.vn/vo-case-asus-rog-z11-mini-itxmau-den">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/vo-may-tinh-asus-gr101-rog-z11.png">
+            </a>
+            <a href="https://nguyencongpc.vn/o-cung-ssd-kingston-nv1-250gb-nvme-pcie-gen-30-x-4-snvs250g">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/ssd-250gb-kingston-nv1-m2-2280-pcie-nvme.png">
+            </a>
+            <a href="https://nguyencongpc.vn/ban-phim-motospeed-k700-black">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/ban-phim-motospeed-k700-black.png">
+            </a>
+            <a href="https://nguyencongpc.vn/chuot-cooler-master-cm110">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/chuot-cooler-master-cm110.png">
+            </a>
+            <a href="https://nguyencongpc.vn/tai-nghe-gaming-galax-sonar-01">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/tai-nghe-gaming-galax-sonar-01.png">
+            </a>
+            <a href="https://nguyencongpc.vn/tim?q=sk620">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/ban-phim-co-day-cooler-master-sk620.png">
+            </a>
+            <a href="https://nguyencongpc.vn/ghe-choi-game-gc-01s-rgb-black-rg01p4dby1-galax">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/ghe-choi-game-gc-01s-rgb-black-rg01p4dby1-galax.png">
+            </a>
+        </div>
+        <div>
+            <a href="https://nguyencongpc.vn/laptop-dell-latitude-3410-70216823-i3-10110u-4gb-ram256gb-ssd140-inch-hdfedoraxam">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/laptop-dell-latitude-3410.png">
+            </a>
+            <a href="https://nguyencongpc.vn/laptop-hp-340s-g7-240q3pa-i3-1005g1">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/laptop-hp-340s-g7-240q4pa.png">
+            </a>
+            <a href="https://nguyencongpc.vn/laptop-lenovo-thinkpad-e14-20ta002nva-black-intel-core-i5-1135g7-up-to-420-ghz-8-mb-ram-8gb-ddr4-512gb-ssd-intel-iris-xe-graphics-14-inch-fhd-fp-3-cell-45-whr-no-os-1-yr">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/laptop-lenovo-thinkpad-e14-gen2.png">
+            </a>
+            <a href="https://nguyencongpc.vn/laptop-asus-tuf-gaming-f15-fx506lh-hn002t-i5-10300h-gtx1650">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/laptop-asus-tuf-gaming-fx506lh-hn002t.png">
+            </a>
+            <a href="https://nguyencongpc.vn/laptop-gigabyte-gaming-g5-gd-51s1123so-intel-core-i5-11400h-16gb-ram-512gb-ssd-156-fhd-144hzrtx-3050-4gb-win11black-2-yrs">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/laptop-gigabyte-gaming-g5-gd-51s1123so.png">
+            </a>
+            <a href="https://nguyencongpc.vn/laptop-msi-modern-14-b5m-204vn-r5-5500u-8gb-512gb-ssd-14fhd-60hz-vga-on-win11-grey-1-yr">
+                <img src="https://nguyencongpc.vn/media/lib/18-03-2022/laptop-msi-modern-14-b5m-204vn.png">
+            </a>
+            
+            <a href="tel:0866666366"style="text-align: center; width: 100%; color: #fff; font-size: 28px; font-weight: bold;">
+            <img src="https://nguyencongpc.vn/media/lib/18-03-2022/contact.png" style="width: 40%;">
+            </a>
+        </div>
+    </div>
+<div class="clearfix"></div>
+<section class="cpr" style="padding: 0;" >
+    <div style="width:1600px;margin: auto;background: #0e5a99;color: #fff;padding: 15px 90px;border-top: 1px solid #ccc;">
+        <p>
+            WEBSITE ĐƯỢC SỞ HỮU VÀ QUẢN LÝ BỞI NGUYỄN VIẾT CÔNG<br/>
+            <b>CÔNG TY TNHH MÁY TÍNH NGUYỄN CÔNG</b><br/>
+            Địa chỉ: Số 377-379 Trương Định, tổ 41 - Phường Tương Mai - Quận Hoàng Mai - Hà Nội.<br/>
+            Mã số thuế: 0107568451 do Sở Kế Hoạch và Đầu Tư TP.Hà Nội (22/12/2015)<br/>
+            GÓP Ý : 0971113333. Email: info@nguyencongpc.vn. Website: nguyencongpc.vn. Fanpage: www.facebook.com/MAY.TINH.NGUYEN.CONG
+        </p>
+    </div>
+</section>
+
+<div class="fix-right">
+    <a href="https://www.facebook.com/Server.Workstation.Gaming.EditVideo" target="_blank" class="fix-face"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://www.youtube.com/c/NGUYENCONGPC" target="_blank" class="fix-youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+    <a href="https://m.me/Server.Workstation.Gaming.EditVideo" target="_blank" class="fix-face"><img src="https://nguyencongpc.vn/static/assets/default/images/icon-mess.png" alt="mes"></a>
+    <a href="https://zalo.me/2360590838383636184" target="_blank" class="fix-face"><img src="https://nguyencongpc.vn/static/assets/default/images/icon-zalo.png" alt="zalo"></a>
+    <a href="javascript:;" class="scroll-top" onclick="scrollToTop()"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+</div>
+
+<script src="https://static.gleecdn.com/hura8/v2/vendors.js?1.1"></script>
+<script src="https://static.gleecdn.com/hura8/v2/hura8.js?1.2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.6/dist/lazyload.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://nguyencongpc.vn//static/assets/default/script/main.js?6.7"></script>
+
+<!---//script hien thi tat ca cac trang-->
+<script>
+var lazy_load_group = [];
+var CURRENT_DOMAIN = "https://nguyencongpc.vn"
+  
+$(document).ready(function(){
+    // // lay so luong gio hang
+    // showCartSummary("#js-cart-counter");
+  
+    // lazy load anh
+    runLazyLoad();
+
+})
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 150) {
+        $("a.scroll-top").show();
+    } else {
+        $("a.scroll-top").hide();
+    }
+  
+    if ($(window).scrollTop() > 200) {
+        $(".header-mid ").addClass("header-fixed");
+    } else {
+        $(".header-mid ").removeClass("header-fixed");
+    }
+})
+</script>
+  
+</body>
+</html>
